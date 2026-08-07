@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Media Gallery - Hama Enterprise</title>
+</head>
+<body>
+
+    <div class="container" id="main-container">
+        
+        <!-- Header / Navigation Section -->
+        <header id="header-section">
+            <div class="navigation" id="main-nav">
+                <img src="logo.png" alt="Hama Enterprise Logo" class="logo" id="company-logo">
+                <p class="brand-name" id="brand-title"><i>HAMA ENTERPRISE</i></p>
+                
+                <nav id="navbar">
+                    <a href="home.html" class="nav-link" id="nav-home">HOME</a>
+                    <a href="about.html" class="nav-link" id="nav-about">ABOUT US</a>
+                    <a href="service.html" class="nav-link" id="nav-service">SERVICES</a>
+                    <a href="gallery.html" class="nav-link active" id="nav-gallery">GALLERY</a>
+                    <a href="contact.html" class="nav-link" id="nav-contact">CONTACT</a>
+                </nav>
+                
+                <button type="button" class="btn btn-primary" id="btn-shop-header">Shop Now</button>
+            </div>
+        </header>
+
+        <!-- Page Banner -->
+        <section class="banner" id="gallery-banner">
+            <img src="flayer.png" alt="">
+            <h1 class="banner-title" id="banner-heading">Our Media Gallery</h1>
+            <p class="banner-description" id="banner-text">
+                Explore photos and video highlights from our completed projects, company operations, and field executions across Nigeria.
+            </p>
+        </section>
+
+        <!-- Gallery Filter Controls -->
+        <section class="filter-section" id="gallery-filters">
+            <div class="filter-container" id="filter-buttons-box">
+                <button type="button" class="filter-btn active" id="filter-all">All Media</button>
+                <button type="button" class="filter-btn" id="filter-images">Photos</button>
+                <button type="button" class="filter-btn" id="filter-videos">Videos</button>
+            </div>
+        </section>
+
+        <!-- Main Gallery Section (Images & Videos) -->
+        <section class="gallery-section" id="media-gallery-section">
+            <div class="gallery-grid" id="gallery-grid-container">
+                
+                <!-- Gallery Item 1: Image Card -->
+                <article class="gallery-card media-image" id="media-card-1">
+                    <div class="media-wrapper">
+                        <img src="project-abuja.jpg" alt="Abuja Commercial Building Project" class="gallery-media">
+                        <span class="badge badge-image">Photo</span>
+                    </div>
+                    <div class="gallery-card-body">
+                        <h3 class="media-title">Abuja Commercial Hub</h3>
+                        <p class="media-caption">Completed structural development in Central Business District, Abuja.</p>
+                    </div>
+                </article>
+
+                <!-- Gallery Item 2: Video Card -->
+                <article class="gallery-card media-video" id="media-card-2">
+                    <div class="media-wrapper">
+                        <video class="gallery-media" controls poster="video-poster-1.jpg">
+                            <source src="project-lagos-tour.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <span class="badge badge-video">Video</span>
+                    </div>
+                    <div class="gallery-card-body">
+                        <h3 class="media-title">Lagos Site Tour</h3>
+                        <p class="media-caption">A walk-through video highlighting our coastal engineering achievements.</p>
+                    </div>
+                </article>
+
+                <!-- Gallery Item 3: Image Card -->
+                <article class="gallery-card media-image" id="media-card-3">
+                    <div class="media-wrapper">
+                        <img src="project-kaduna.jpg" alt="Kaduna Industrial Facility" class="gallery-media">
+                        <span class="badge badge-image">Photo</span>
+                    </div>
+                    <div class="gallery-card-body">
+                        <h3 class="media-title">Kaduna Facility Upgrade</h3>
+                        <p class="media-caption">Modern industrial warehousing assembly and quality testing zone.</p>
+                    </div>
+                </article>
+
+                <!-- Gallery Item 4: Video Card -->
+                <article class="gallery-card media-video" id="media-card-4">
+                    <div class="media-wrapper">
+                        <video class="gallery-media" controls poster="video-poster-2.jpg">
+                            <source src="machinery-demo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <span class="badge badge-video">Video</span>
+                    </div>
+                    <div class="gallery-card-body">
+                        <h3 class="media-title">Equipment Demonstration</h3>
+                        <p class="media-caption">Demonstrating precision equipment in full field execution.</p>
+                    </div>
+                </article>
+
+                <!-- Gallery Item 5: Image Card -->
+                <article class="gallery-card media-image" id="media-card-5">
+                    <div class="media-wrapper">
+                        <img src="project-portharcourt.jpg" alt="Port Harcourt Offshore Site" class="gallery-media">
+                        <span class="badge badge-image">Photo</span>
+                    </div>
+                    <div class="gallery-card-body">
+                        <h3 class="media-title">Port Harcourt Logistics Hub</h3>
+                        <p class="media-caption">Operational supply depot serving south-south operations.</p>
+                    </div>
+                </article>
+
+                <!-- Gallery Item 6: Video Card -->
+                <article class="gallery-card media-video" id="media-card-6">
+                    <div class="media-wrapper">
+                        <video class="gallery-media" controls poster="video-poster-3.jpg">
+                            <source src="client-testimonial.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <span class="badge badge-video">Video</span>
+                    </div>
+                    <div class="gallery-card-body">
+                        <h3 class="media-title">Client Feedback</h3>
+                        <p class="media-caption">Video testimony from project partners on overall service delivery.</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Footer Contact Info -->
+        <address class="contact-section" id="footer-contact-info">
+            <p class="contact-item"><strong>Address:</strong> 123 Main Street, Victoria Island, Lagos, Nigeria</p>
+            <p class="contact-item"><strong>Phone:</strong> <a href="tel:+1234567890">+123 456 7890</a></p>
+            <p class="contact-item"><strong>Email:</strong> <a href="mailto:info@hamaenterprise.com">info@hamaenterprise.com</a></p>
+        </address>
+
+        <!-- Footer -->
+        <footer id="main-footer">
+            <p>&copy; 2025 Hama Enterprise. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+    <script src="javer.js"></script>
+
+</body>
+</html>
